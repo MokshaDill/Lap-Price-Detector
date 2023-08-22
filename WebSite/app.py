@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+from sklearn.linear_model import LinearRegression  
 
 # setup application
 app = Flask(__name__)
@@ -67,3 +68,4 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
